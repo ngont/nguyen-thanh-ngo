@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Dr. [Your Name]</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .map-placeholder {
+      background: var(--bg-alt);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      height: 220px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-light);
+      font-size: 0.9rem;
+      margin-top: 24px;
+    }
+
+    .social-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 12px;
+      margin-top: 8px;
+    }
+
+    .social-card {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 16px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      text-decoration: none;
+      color: var(--text);
+      transition: box-shadow 0.2s, border-color 0.2s;
+      background: var(--bg-card);
+    }
+
+    .social-card:hover {
+      box-shadow: var(--shadow);
+      border-color: var(--accent);
+      text-decoration: none;
+      color: var(--primary);
+    }
+
+    .social-card-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 1.1rem;
+    }
+
+    .social-card-label {
+      font-size: 0.78rem;
+      color: var(--text-light);
+    }
+
+    .social-card-value {
+      font-size: 0.88rem;
+      font-weight: 500;
+    }
+
+    .office-hours-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+      margin-top: 8px;
+    }
+
+    .office-hours-table td {
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border);
+      color: var(--text-muted);
+    }
+
+    .office-hours-table td:first-child {
+      font-weight: 600;
+      color: var(--text);
+      width: 140px;
+    }
+
+    .office-hours-table tr:last-child td {
+      border-bottom: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== Navigation ===== -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">Dr. [Your Name]</a>
+      <button class="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="cv.html">CV</a>
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="contact.html" class="active">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== Page Header ===== -->
+  <div class="page-header">
+    <h1>Contact</h1>
+    <p>Get in touch — research inquiries, collaborations, or student advising</p>
+  </div>
+
+  <!-- ===== Contact Info + Office Hours ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Left: Contact Details -->
+        <div class="contact-block">
+          <h3>Contact Information</h3>
+
+          <div class="contact-item">
+            <div class="contact-icon">📧</div>
+            <div>
+              <div class="contact-label">Email</div>
+              <div class="contact-value">
+                <a href="mailto:your.email@university.edu">your.email@university.edu</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div>
+              <div class="contact-label">Office</div>
+              <div class="contact-value">
+                Room [XXX], [Building Name]<br>
+                [Street Address]<br>
+                [City, State ZIP], [Country]
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div>
+              <div class="contact-label">Phone</div>
+              <div class="contact-value">+[Country Code] [XXX] [XXX] [XXXX]</div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">🏛️</div>
+            <div>
+              <div class="contact-label">Mailing Address</div>
+              <div class="contact-value">
+                Department of [Your Department]<br>
+                [University Name]<br>
+                [Street / PO Box]<br>
+                [City, State ZIP]
+              </div>
+            </div>
+          </div>
+
+          <!-- Optional: map embed placeholder -->
+          <div class="map-placeholder">
+            📍 Embed Google Maps here (replace with &lt;iframe&gt; from maps.google.com)
+          </div>
+        </div>
+
+        <!-- Right: Office Hours + Notes -->
+        <div class="contact-block">
+          <h3>Office Hours</h3>
+          <table class="office-hours-table">
+            <tr>
+              <td>Monday</td>
+              <td>[10:00 AM – 12:00 PM] or by appointment</td>
+            </tr>
+            <tr>
+              <td>Wednesday</td>
+              <td>[2:00 PM – 4:00 PM]</td>
+            </tr>
+            <tr>
+              <td>Friday</td>
+              <td>By appointment only</td>
+            </tr>
+          </table>
+
+          <div style="margin-top: 32px;">
+            <h3>Notes for Prospective Students</h3>
+            <p style="font-size:0.9rem; color:var(--text-muted); line-height:1.8; margin-top:12px;">
+              If you are interested in joining my lab as a Ph.D. or M.S. student, please include
+              the following in your email:
+            </p>
+            <ul style="font-size:0.88rem; color:var(--text-muted); line-height:2; margin-top:8px; padding-left:20px; list-style:disc;">
+              <li>Your CV / resume</li>
+              <li>Unofficial transcripts</li>
+              <li>A brief statement of your research interests</li>
+              <li>Names of 2–3 references</li>
+              <li>Links to any prior work (papers, code, thesis)</li>
+            </ul>
+            <p style="font-size:0.88rem; color:var(--text-muted); margin-top:12px; line-height:1.8;">
+              I receive many emails. I am more likely to respond if you demonstrate that you have
+              read at least one of my recent papers and explain how your interests align with my work.
+            </p>
+          </div>
+
+          <div style="margin-top: 32px;">
+            <h3>For Collaborations</h3>
+            <p style="font-size:0.9rem; color:var(--text-muted); line-height:1.8; margin-top:12px;">
+              I welcome collaborations with academics and industry researchers. Please describe
+              the proposed collaboration and relevant background in your initial email.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Social / Academic Profiles ===== -->
+  <section class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Academic &amp; Social Profiles</h2>
+      <div class="section-divider"></div>
+
+      <div class="social-grid">
+
+        <a href="https://scholar.google.com" target="_blank" rel="noopener" class="social-card">
+          <div class="social-card-icon" style="background:#e8f0fe;">🎓</div>
+          <div>
+            <div class="social-card-label">Google Scholar</div>
+            <div class="social-card-value">[Your Name]</div>
+          </div>
+        </a>
+
+        <a href="https://orcid.org" target="_blank" rel="noopener" class="social-card">
+          <div class="social-card-icon" style="background:#e6f4ea;">🆔</div>
+          <div>
+            <div class="social-card-label">ORCID</div>
+            <div class="social-card-value">XXXX-XXXX-XXXX-XXXX</div>
+          </div>
+        </a>
+
+        <a href="https://github.com/yourusername" target="_blank" rel="noopener" class="social-card">
+          <div class="social-card-icon" style="background:#f3f4f6;">🐙</div>
+          <div>
+            <div class="social-card-label">GitHub</div>
+            <div class="social-card-value">@yourusername</div>
+          </div>
+        </a>
+
+        <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-card">
+          <div class="social-card-icon" style="background:#e8f4fd;">💼</div>
+          <div>
+            <div class="social-card-label">LinkedIn</div>
+            <div class="social-card-value">[Your Name]</div>
+          </div>
+        </a>
+
+        <a href="https://twitter.com/yourhandle" target="_blank" rel="noopener" class="social-card">
+          <div class="social-card-icon" style="background:#e8f5fe;">🐦</div>
+          <div>
+            <div class="social-card-label">X / Twitter</div>
+            <div class="social-card-value">@yourhandle</div>
+          </div>
+        </a>
+
+        <a href="https://dblp.org" target="_blank" rel="noopener" class="social-card">
+          <div class="social-card-icon" style="background:#fef3e2;">📚</div>
+          <div>
+            <div class="social-card-label">DBLP</div>
+            <div class="social-card-value">[Your Name]</div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-name">Dr. [Your Full Name]</div>
+        <div class="footer-copy">Assistant Professor, [Department] · [University] · © 2026</div>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="cv.html">CV</a>
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
